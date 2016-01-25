@@ -10,10 +10,8 @@ It will install
  * Composer
 
 
-The Magento 2 repository is a git submodule and can be edited/explored from the host machine. It is accessed by the guest via shared directories.
+### Installation
 
-### Usage
-#### Installation
 1. Clone this repository: `git clone --recursive https://github.com/giappv/vagrant_magento2.git`
 2. Navigate into the repository via `cd`
 2. **IMPORTANT**: If you cloned the repository without the *--recursive* param, you need to initialize the required submodules: `git submodule update --init --recursive`
