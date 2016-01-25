@@ -2,12 +2,12 @@
 A simple way to get magento2 up and running. It consists of a ubuntu/trusty64 box provised via Ansible. 
 The provider is Virtual Box. 
 It will install 
-*Apache 2.4
-*PHP 5.6
-*MySql 5.6
-*GIT 
-*Swapfile
-*Composer
+ * Apache 2.4
+ * PHP 5.6
+ * MySql 5.6
+ * GIT 
+ * Swapfile
+ * Composer
 
 
 The Magento 2 repository is a git submodule and can be edited/explored from the host machine. It is accessed by the guest via shared directories.
