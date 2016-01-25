@@ -41,5 +41,5 @@ It will install
 * Password: 123456
 * DB Name: mage
 
-### Guest Machine
-* /vagrant/data/magento2 - Apache Document Root
+### Apache Doc Root
+* /vagrant/data/magento2 
