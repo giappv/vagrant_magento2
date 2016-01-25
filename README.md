@@ -42,4 +42,4 @@ It will install
 * DB Name: mage
 
 ### Apache Doc Root
-* /vagrant/data/magento2 
+* /vagrant/htdocs/magento2 
