@@ -1,0 +1,31 @@
+---
+server:
+    install: '1'
+    packages: [git, vim, htop]
+    timezone: UTC
+    locale: en_US.UTF-8
+vagrant_local:
+    install: '1'
+    vm: { base_box: trusty64, hostname: mage2, ip: 192.168.36.99, memory: '2048', sharedfolder: ./, useVagrantCloud: '1', syncType: nfs }
+apache:
+    install: '1'
+    docroot: /vagrant/htdocs/magento2
+    servername: myApp.vb
+mysql:
+    install: '1'
+    root_password: mage
+    database: mage
+    user: mage
+    password: '123456'
+    dump: ''
+php:
+    install: '1'
+    ppa: php5-5.6
+    packages: [php5-cli, php5-intl, php5-mcrypt, php5-curl, php5-imagick, php5-common, php5-gd, php5-mysql, php5-xdebug, php5-xsl, php5-xcache]
+xdebug:
+    install: '1'
+composer:
+    install: '1'
+swapfile:
+    install: '1'
+
