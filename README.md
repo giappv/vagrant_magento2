@@ -37,6 +37,7 @@ The Magento 2 repository is a git submodule and can be edited/explored from the 
   ```
 7. Go to /vagrant/htdocs/magento2 run `composer update`
 8. Visit `dev.m2` on your browser to setup magento
+9. Go to /vagrant/htdocs/magento2 run `php bin/magento setup:static-content:deploy` to update static folder
 
 ### Database Info
 * Username: mage
