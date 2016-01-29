@@ -1,2 +1,4 @@
 ---
 # application tasks to be customized and to run after the main provision
+- name: Go to the htdocs folder and create magento project
+  command: chdir=/vagrant/htdocs composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition magento2

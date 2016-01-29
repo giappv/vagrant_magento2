@@ -25,7 +25,11 @@ php:
 xdebug:
     install: '1'
 composer:
-    install: '1'
+    install: '1'	
 swapfile:
     install: '1'
-
+composer_github_oauth: b9e36f39aa65cb3282e456c3825267e68a98f3d9
+composer_http_basic:
+    repo.magento.com:
+        username: d7990a5019126a9e024d85f826f217f5
+        password: 935e734272ceee33becb5b01b6230d8b
