@@ -33,7 +33,7 @@ It will install
       }
   }
   ```
-7. Go to /vagrant/htdocs/magento2 run `composer update`
+7. Go to /vagrant/htdocs/magento2 run `composer install`
 8. Visit `dev.m2` on your browser to setup magento
 9. Go to /vagrant/htdocs/magento2 run `php bin/magento setup:static-content:deploy` to update static folder
 
