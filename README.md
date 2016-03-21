@@ -18,21 +18,16 @@ It will install
 3. Start up virtual machine: `vagrant up`
 4. Point a host name to 192.168.36.99 in /etc/hosts `echo '192.168.36.99 dev.m2' >> /etc/hosts`
 5. Once the machine completes provisioning, SSH to the server (`vagrant ssh`).
-6. Add your Magento Connect authentication credentials to the global composer auth.json:
+6. Add your Magento Connect authentication credentials to ansible vars
 
-  * Open or create the file `~/.composer/auth.json`
-  * Add the Magento Connect authentication credentials (if you don't have any, please check [here](http://devdocs.magento.com/guides/v2.0/install-gde/prereq/connect-auth.html) on how to create them):
+`ansible/vars/all.yml`
 
-  ```json
-  {
-      "http-basic": {
-          "repo.magento.com": {
-              "username": "<public key>",
-              "password": "<private key>"
-          }
-      }
-  }
-  ```
+```composer_http_basic:
+    repo.magento.com:
+        username: d7990a5019126a9e024d85f826f217f5
+        password: 935e734272ceee33becb5b01b6230d8b```
+
+
 7. Go to /vagrant/htdocs/magento2 run `composer install`
 8. Visit `dev.m2` on your browser to setup magento
 9. Go to /vagrant/htdocs/magento2 run `php bin/magento setup:static-content:deploy` to update static folder
